@@ -1,0 +1,30 @@
+<div class="row" *ngIf="errorMessage" style="text-align: center">
+    <h1>User not found</h1>
+</div>
+<div class="col-xs-offset-2" *ngIf="user && !errorMessage">
+    <div class="row">
+        <br/>
+        <div class="col-xs-3">
+            <div class="row">
+                <img class="img-responsive img-rounded pull-left" [src]="user.avatar_url" />
+            </div>
+            <div class="row" style="text-align: center"><span>{{user.login}}</span></div>
+        </div>
+        <div class="col-xs-5" style="text-align: center">
+            <span>{{user.name}}</span>
+            <hr class="style18" />
+            <a href="{{user.html_url}}">
+                <span>Public repos: {{user.public_repos}}</span>
+            </a>
+            <br />
+            <br />
+            <span>Since: {{user.created_at | date}}</span>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-xs-12">
+            <reposComponent [name]="user.login">Loading repos</reposComponent>
+        </div>
+    </div>
+</div>
