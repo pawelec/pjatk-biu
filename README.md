@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 It is a Angular2 with TypeScript application where you can list GitHub users, user details and his repositorires. 
 
 It is a final project for BIU subject.
@@ -24,4 +24,7 @@ Additionally you can list user repos and they details.
 - [x] Forms
     - [x] Template-Driven forms
     - [ ] \(Optional) Reactive forms
+    
+ # Demo
+ Demo is available at http://pjatk-biu.azurewebsites.net/
     
