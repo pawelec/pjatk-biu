@@ -2,15 +2,9 @@
     <br />
     <div class="col-xs-6 col-xs-offset-3 center input-group">
         <form #f="ngForm" (ngSubmit)="onSubmit()">
-            <input class="form-control" type="text" placeholder="Enter username" aria-describedby="basic-addon1"
+            <input class="form-control" type="text" placeholder="Enter GitHub username" aria-describedby="basic-addon1"
                 name="searchTextInput" id="searchTextInput" #searchTextInput="ngModel"  
                 [(ngModel)]="searchText" required minlength="2">
-    <!--        <div class="alert alert-danger" [hidden]="searchTextInput.valid || searchTextInput.pristine || !searchTextInput.errors.required">
-                User name is required
-            </div>
-            <div class="alert alert-danger" [hidden]="searchTextInput.valid || searchTextInput.pristine || !searchTextInput.errors.minlength">
-                Min user name length is '2'
-            </div>-->
     </form>
     </div>
     <br />
